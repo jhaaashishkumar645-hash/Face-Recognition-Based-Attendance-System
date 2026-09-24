@@ -1,33 +1,69 @@
-# Face_recognition_based_attendance_system
-A python GUI integrated attendance system using face recognition to take attendance.
+# Face Recognition Based Attendance System
 
-In this python project, I have made an attendance system which takes attendance by using face recognition technique. I have also intergrated it with GUI (Graphical user interface) so it can be easy to use by anyone. GUI for this project is also made on python using tkinter.
+A Python-based attendance management system that uses **face recognition** to automatically mark attendance. The project includes a simple **Tkinter GUI** so that the system can be operated easily through an interactive interface.
 
-TECHNOLOGY USED:
-1) tkinter for whole GUI
-2) OpenCV for taking images and face recognition (cv2.face.LBPHFaceRecognizer_create())
-3) CSV, Numpy, Pandas, datetime etc. for other purposes.
+## Overview
 
-FEATURES:
-1) Easy to use with interactive GUI support.
-2) Password protection for new person registration.
-3) Creates/Updates CSV file for details of students on registration.
-4) Creates a new CSV file everyday for attendance and marks attendance with proper date and time.
-5) Displays live attendance updates for the day on the main screen in tabular format with Id, name, date and time.
+This project provides a simple way to manage student registration and daily attendance using face recognition. It uses OpenCV for face detection and recognition and stores student and attendance information in CSV files.
 
-### For more information:
-https://machinelearningprojects.net/face-recognition-based-attendance-system/
+The GUI is developed using Python's **Tkinter** library.
 
-# SCREENSHOTS
-MAIN SCREEN:
-![Screenshot (9)](https://user-images.githubusercontent.com/37211676/58502148-97ec2a00-81a3-11e9-963e-674b9c3e05dc.png)
+## Technologies Used
 
+* **Python**
+* **Tkinter** – GUI development
+* **OpenCV** – Image processing and face recognition
+* **LBPH Face Recognizer** – Face recognition
+* **NumPy** – Numerical operations
+* **Pandas** – Data handling
+* **CSV** – Student and attendance data storage
+* **Datetime** – Date and time management
 
-SHOWING ATTENDANCE TAKEN:
-![Screenshot (11)](https://user-images.githubusercontent.com/37211676/58502151-9884c080-81a3-11e9-9a90-fec29940ee5a.png)
+## Features
 
-HELP OPTION IN MENUBAR:
-![Screenshot (12)](https://user-images.githubusercontent.com/37211676/58502152-991d5700-81a3-11e9-861a-9115526010c2.png)
+* Interactive and easy-to-use GUI
+* Face recognition based attendance
+* Password protection for new person registration
+* Student details stored and updated through CSV files
+* Automatically creates a daily attendance CSV file
+* Records attendance with date and time
+* Displays live attendance updates on the main screen
+* Attendance table includes:
 
-CHANGE PASSWORD OPTION:
-![Screenshot (13)](https://user-images.githubusercontent.com/37211676/58502146-97539380-81a3-11e9-8536-0c68160ecc55.png)
+  * ID
+  * Name
+  * Date
+  * Time
+* Password change option
+* Help option available through the menu bar
+
+## How It Works
+
+1. Register a new person through the GUI.
+2. The system collects face images for the registered person.
+3. OpenCV is used to process the captured images.
+4. The LBPH Face Recognizer is used for face recognition.
+5. When a registered face is recognized, attendance is recorded.
+6. Attendance is saved with the person's ID, name, date, and time.
+7. The current day's attendance is displayed in the GUI.
+
+## Project Structure
+
+```text
+Face-Recognition-Based-Attendance-System/
+│
+├── main.py
+├── haarcascade_frontalface_default.xml
+├── README.md
+└── LICENSE
+```
+
+## Screenshots
+
+### Main Screen
+
+![Main Screen](https://user-images.githubusercontent.com/37211676/58502148-97ec2a00-81a3-11e9-963e-674b9c3e05dc.png)
+
+### Attendance Display
+
+![Attendance Display](https://user-images.githubusercontent.com/372116)
